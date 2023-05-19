@@ -1,1 +1,1 @@
-# My first repo.
+# This is the repo for my Rainy Days Webshop 
