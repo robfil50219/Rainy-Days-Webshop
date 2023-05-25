@@ -1,0 +1,91 @@
+body {
+    background-color: #C6EAF0;
+    max-width: 0 auto;
+    margin: 0 auto;
+} 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header { 
+    background-color: #90BABF;
+    height: 300px;
+} 
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+} 
+
+h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+.scrolling-banner {
+    position: relative;
+}
+
+.banner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banner-item div {
+    margin: 0 100px;
+}
+
+.banner-items {
+    display: flex; 
+    width: fit-content;
+    gap: 20px;
+    animation: scrollBanner 10s linear infinite;
+} 
+
+.banner-item {
+    max-width: 0 auto;
+    height: 150;
+    background-color: #ffffff;
+}
+@font-face {
+    font-family:'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf'); 
+}
+
+
+@keyframes scrollBanner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } 
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: black;
+    z-index: 1;
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
+  }
