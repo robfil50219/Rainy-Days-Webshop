@@ -1,24 +1,114 @@
-body {
-    background-color: #C6EAF0;
-    max-width: 0 auto;
-    margin: 0 auto;
-} 
+/* Media Quaries*/
 
-body {
+/* Ultra-Wide Screens */
+@media (min-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 40px;
+    }
+
+    .logo {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    .image-container {
+        margin-top: 50px;
+    }
+  }
+  
+  /* Large Desktop Screens (1200 pixels and above) */
+  @media (min-width: 1200px) { 
+   body {
+    font-size: 16px; 
+   } 
+   header { 
+    padding: 30px
+   } 
+   .logo {
+    height: 180px; 
+   }
+   h1 {
+    font-size: 28px;
+   } 
+   .image-container {
+    margin-top: 80px;
+   }
+
+  }
+  
+  /* Standard Desktop Screens (992 to 1199 pixels) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        height: 150px;
+    }
+  }
+  
+  /* Tablets and Small Desktop Screens (768 to 991 pixels) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 24px;
+    }
+  }
+  
+  /* Mobile Devices (up to 767 pixels) */
+  @media (max-width: 767px) {
+    .image-container {
+        margin-top: 50px;
+    }
+  }
+  
+  /* General CSS Rules */
+
+  body {
+    background-color: #C6EAF0;
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-header { 
+header {
     background-color: #90BABF;
-    height: 300px;
-} 
+    bottom: 0;
+    left: 0;
+    width: auto;
+    padding: 30px; 
+    display: flex;
+    justify-content: center;  
+}
 
 .logo {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: flex-end; 
     height: 200px;
-} 
+    max-height: 100%; 
+}
+
+input[type="checkbox"] {
+    display: none; 
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px; 
+}
+
+.menu {
+    display: none; /* Hide the menu by default */
+}
+
+/* Show the menu when the checkbox is checked */
+input[type="checkbox"]:checked ~ .menu {
+    display: block;
+}
+
 
 h1 {
     text-align: center;
@@ -64,7 +154,7 @@ h2 {
 }
 
 .image-container img {
-    margin: 0 10px;
+    margin: 30px;
 }
 
 @font-face {
@@ -104,16 +194,35 @@ h2 {
 footer {
     background-color: #ffffff;
     border-top: 1px solid black;
-    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .social-media {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    flex-grow: 1;
 }
 
 .social-media a:not(:last-child) {
     margin-right: 20px;
+}
+
+
+  <!--About Us--> 
+
+.wrapped {
+    white-space: normal;
 } 
+
+.container {
+    text-align: center;
+}
