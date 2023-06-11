@@ -139,7 +139,7 @@ header {
 }
 
 .submenu {
-  display: none;
+  display: none;      
   position: absolute;
   left: 0;
   top: 100%;
@@ -230,85 +230,10 @@ h2 {
   text-align: center;
 }
 
-.scrolling-banner {
-  position: relative;
-  overflow: hidden;
-}
-
-.banner-item {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner-item img {
-  width: 190px;
-  height: 190px;
-  margin: 10px;
-}
-
-.banner-items {
-  display: flex;
-  animation: bannerSwap 10s infinite;
-  gap: 10px;
-  overflow: hidden;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner-item {
-  flex: 0 0 100%;
-}
-
-@keyframes bannerSwap {
-  0% {
-    transform: translateX(0%);
-  }
-  33% {
-    transform: translateX(-100%);
-  }
-  66% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
-}
-
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/OpenSans-Regular.ttf');
   src: url('../fonts/OpenSans-Bold.ttf');
-}
-
-@keyframes scrollBanner {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.left-arrow {
-  left: 30px;
-}
-
-.right-arrow {
-  right: 30px;
 }
 
 footer {
