@@ -191,18 +191,53 @@ header {
   padding: 15px;
 }
 
-.search-icon {
+.search-container {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 15px;
+  display: flex;
+  align-items: center;
 }
 
-.home-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 15px;
+.search-bar {
+  display: none;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon img {
+  padding-right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.search-container:hover .search-bar {
+  display: flex;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  display: none;
+}
+
+.search-container:hover .search-button {
+  display: block;
 }
 
 .logo {
