@@ -321,9 +321,33 @@ body {
 }
 
 .container:hover {
-  transform: scale(1.5);
+  transform: scale(1.5); 
+  z-index: 1;
 }
 
+.videos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper {
+  width: 560px;
+  margin: 0 10px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height divided by width) */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 footer {
   margin-top: auto;
 }
